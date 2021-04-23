@@ -88,7 +88,6 @@ if args.message:
   isset_message=True
   if len(args.message) > 70:
     print('\033[0;33;40m!!!\n    WARNING: message exceeds 70 character limit\n!!!\033[0;37;40m\n\n\033[1;32;40m ' + args.message[0:70] + '\033[1;31;40m' + args.message[70:len(args.message)] + '\n\n\033[1;37;40m Y => Continue and send the green highlighted part\n N => Exit\n')
-  if not message:
     temp=input('what tf to do? sir... >>> ')
     if temp.lower == 'y':
       message = args.message[0:70]
